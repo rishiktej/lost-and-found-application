@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <body>
+        <p class="T">REGISTER THE PRODUCT</p>
+        <style>
+            * {
+  box-sizing: border-box;
+}
+body{
+    background-color: #131313;
+}
+.p{
+    background-color: rgb(207, 70, 24);
+    color: white;
+    box-shadow: black;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: orangered;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+
+}
+
+input[type=submit]:hover {
+  background-color: #303030;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #131313;
+  padding: 20px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  
+
+}
+.col-25{
+  color: orangered;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<div class="container">
+
+  <form action="connect.php" method="post">
+  <div class="row">
+    <div class="col-25">
+      <label for="pro">what is the product</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pro" name="pro" placeholder="product name" background-color: #303030>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">where did you find it</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lname" placeholder="location name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="time">when did you find it</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="time" name="time" placeholder="Enter date and time..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Describe the product</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="write about the product.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pic">Upload a photo:</label>
+    </div>
+    <div class="col-75">
+        <form>
+            <input class="p" type="file" accept="image/*" id="pic" name="pic"/>
+          </form>
+    </div>
+  </div>
+  <p>FOUNDER DETAILS</p>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">NAME:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="fname" placeholder="Enter your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="mid">MAIL ID</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="mid" name="mid" placeholder="Enter your mail id...eg:abc123@gmail.com">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pno">PHONE NUMBER</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pno" name="pno" placeholder="Enter your phone number">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Upload the product">
+  </div>
+  </form>
+</div>
+        </style>
+    </body>
+</head>
